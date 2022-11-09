@@ -24,7 +24,7 @@
     --nav-height: 7.2rem;
     --bg-light: hsl(180, 14%, 97%);    
 }
-
+/*6.2*/
 html {
     scroll-behavior: smooth;
 }
@@ -50,6 +50,7 @@ ul {
 
 img {
     max-width: 100%;
+    
 }
 
 .wrapper {
@@ -204,7 +205,7 @@ section .content p {
 
 /*======Navigation==============*/
 
-nav {
+nav.scroll {
     display:flex;
     height:var(--nav-height);
 
@@ -213,12 +214,15 @@ nav {
     width: 100vw;
 
     z-index: 100;
+
+   
 }
 
 nav .wrapper {
     display:flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 1rem;
 }
 
 nav.scroll {
@@ -261,9 +265,17 @@ nav .menu,
 nav .close-menu { 
     position: fixed;
 }
+
+
 /*========Menu-Expanded================*/
+body.menu-expanded .iconn {
+   opacity: 0;
+}
+
 body.menu-expanded {
-    overflow: hidden; 
+    overflow:hidden;
+    
+    
 }
 
 body.menu-expanded > :not(nav) {  
@@ -401,6 +413,7 @@ body.menu-expanded button path {
 }
 #about header h2 {
     margin-bottom: 2.4rem;
+    
 }
 
 #about .content p {
@@ -645,6 +658,7 @@ footer .social-links {
     #home .wrapper {
         grid-template-columns: 60.5rem 1fr;
         grid-template-areas: 'A B' 'C C';
+        
     }
     #home .col-a {
         grid-area: A;
@@ -657,6 +671,8 @@ footer .social-links {
     #home h1 {
         font-size: 5.2rem;
     }
+
+
 
     #home .content p {
         font-size: 1.8rem;
@@ -684,6 +700,7 @@ footer .social-links {
         width: 42rem;
     }
     /*===========Services========================*/
+    
     #services h2 {
         width: 47rem;
         margin-inline: auto;
@@ -737,6 +754,7 @@ footer .social-links {
 
     footer .col-a {
         align-self: center;
+        
     }
 
     footer .col-b {

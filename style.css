@@ -741,6 +741,7 @@ footer .social-links {
 
     #contact .wrapper .col-b img {
         width: 30rem;
+        margin-inline: 15rem;
     }
     /*===============Footer=================*/
     footer {
